@@ -13,18 +13,21 @@ def generate_email(sender, recipient, subject, language):
     # Define the prompt for generating the email
     print(language)
     if language == 'en':
+        print('en')
         prompt = f"""
-        Write an email from {sender} to {recipient} with the subject "{subject}" in {language}:
+        Write an professional business email from {sender} to {recipient} with the subject "{subject}" in {language}:
 
         ---
         """
-    elif language == 'zh':
+    elif language == 'zh_TW':
+        print('zzh')
         prompt = f"""
-        #zh-tw 寫一封Email 由 {sender} 撰寫 給 {recipient} 收件 主題是 "{subject}":
+        #zh-tw 用繁體中文，台灣人的口吻寫一封商業Email 由 {sender} 撰寫 給 {recipient} 收件 主題是 "{subject}":
 
         ---
         """
     else:
+        print('das')
         prompt = f"""
         Write an email from {sender} to {recipient} with the subject "{subject}":
 
@@ -33,7 +36,7 @@ def generate_email(sender, recipient, subject, language):
     
     # Call the OpenAI API to generate the email
     response = openai.Completion.create(
-        engine="text-davinci-002",
+        engine="text-davinci-003",
         prompt=prompt,
         temperature=0.7,
         max_tokens=1024,

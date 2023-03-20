@@ -22,14 +22,14 @@
           <label for="language">Language:</label>
           <select class="form-control" id="language" name="language" required>
             <option value="en">English</option>
-            <option value="zh">繁體中文</option>
+            <option value="zh_TW">繁體中文</option>
           </select>
         </div>
         <button type="submit" class="btn btn-primary mb-5 btn-home">Generate Email</button>
       </form>
       <div class="form-group">
         <label for="output">Generated Email:</label>
-        <textarea class="form-control" id="output" rows="15" readonly></textarea>
+        <textarea class="form-control" id="output" rows="15" readonly>{{ email }}</textarea>
       </div>
     </div>
   </div>

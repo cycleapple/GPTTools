@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <h2 class="text-center my-5">Regex Generation Tool</h2>
+      <form method="POST" action="{{ url_for('regex_generation_tool') }}">
+        <div class="form-group">
+          <label for="requirement">Requirement:</label>
+          <input type="text" class="form-control" id="requirement" name="requirement" placeholder="Enter the requirement" required>
+        </div>
+        <button type="submit" class="btn btn-primary mb-5 btn-home">Generate Regex</button>
+      </form>
+      {% if regex %}
+      <div class="form-group">
+        <label for="output">Generated Regex:</label>
+        <textarea class="form-control" id="output" name="output" rows="10" readonly>{{ regex }}</textarea>
+      </div>
+      <div class="form-group">
+        <label for="regex101">Regex101 URL:</label>
+        <input type="text" class="form-control" id="regex101" name="regex101" value="https://regex101.com/?regex={{ regex }}" readonly>
+        <br>
+        <button type="button" class="btn btn-primary" onclick="window.open('{{ regex101_url }}', '_blank')">Open Regex101</button>
+        <!-- <a href="{{ regex101_url }}" target="_blank" class="btn btn-primary">Open Regex101</a> -->
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}

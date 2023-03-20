@@ -10,13 +10,15 @@ body {
 
 .container {
   max-width: 800px;
-  margin: auto; /* Center the container horizontally */
+  margin: 0 auto; /* Center the container horizontally */
   background-color: white;
   border-radius: 5px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   padding: 30px;
   margin-top: 30px;
+  text-align: center; /* Center the content inside the container */
 }
+
 
 h1 {
   font-size: 36px;
@@ -75,9 +77,26 @@ button:hover {
   background-color: #3e8e41;
 }
 
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav li:first-child {
+  margin-left: 0;
+}
 
 .btn-home {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
   padding: 12px 24px;
   background-color: #1a73e8;
   color: #fff;
@@ -88,6 +107,7 @@ button:hover {
   letter-spacing: 0.25px;
   transition: background-color 0.2s;
 }
+
 
 .btn-home:hover {
   background-color: #0d47a1;
@@ -106,10 +126,13 @@ button.generate-email:hover {
   background-color: #357ae8;
 }
 
-
-nav ul {
-  list-style: none;
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
+
 
 /* Responsive styles */
 
@@ -121,5 +144,4 @@ nav ul {
   h1 {
     font-size: 28px;
   }
-  
 }
