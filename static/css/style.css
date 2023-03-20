@@ -1,0 +1,125 @@
+/* Default styles */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+  text-align: center; /* Center the content of the page */
+}
+
+.container {
+  max-width: 800px;
+  margin: auto; /* Center the container horizontally */
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-top: 30px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input,
+select {
+  display: block;
+  width: 98%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #dcdcdc;
+  margin: 0 auto 20px auto; /* Center the input and select elements */
+}
+
+textarea {
+  display: block;
+  width: 98%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #dcdcdc;
+  margin-bottom: 20px;
+  height: 500px; /* Set a default height for the textarea */
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+.nav-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  background-color: #3e8e41;
+}
+
+
+.btn-home {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #1a73e8;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  transition: background-color 0.2s;
+}
+
+.btn-home:hover {
+  background-color: #0d47a1;
+}
+
+button.generate-email {
+  background-color: #4285F4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.generate-email:hover {
+  background-color: #357ae8;
+}
+
+
+nav ul {
+  list-style: none;
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+  
+}

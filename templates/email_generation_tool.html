@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <h2 class="text-center my-5">Email Generation Tool</h2>
+      <form method="POST" action="{{ url_for('email_generation_tool') }}">
+        <div class="form-group">
+          <label for="sender">Sender Name:</label>
+          <input type="text" class="form-control" id="sender" name="sender" placeholder="Enter sender name" required>
+        </div>
+        <div class="form-group">
+          <label for="recipient">Recipient Name:</label>
+          <input type="text" class="form-control" id="recipient" name="recipient" placeholder="Enter recipient name" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject:</label>
+          <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter email subject" required>
+        </div>
+        <div class="form-group">
+          <label for="language">Language:</label>
+          <select class="form-control" id="language" name="language" required>
+            <option value="en">English</option>
+            <option value="zh">繁體中文</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary mb-5 btn-home">Generate Email</button>
+      </form>
+      <div class="form-group">
+        <label for="output">Generated Email:</label>
+        <textarea class="form-control" id="output" rows="15" readonly></textarea>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

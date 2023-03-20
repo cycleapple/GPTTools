@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+  <h1>Welcome to GPT Tools</h1>
+  <div class="row">
+    <div class="col-md-6 col-sm-12">
+      <div class="card bg-primary mb-3">
+        <div class="card-body">
+          <h5 class="card-title"><a class="text-white" href="{{ url_for('email_generation_tool') }}">Email Generation Tool</a></h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-12">
+      <div class="card bg-secondary mb-3">
+        <div class="card-body">
+          <h5 class="card-title"><a class="text-white" href="{{ url_for('email_optimize_tool') }}">Email Optimize Tool</a></h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-12">
+      <div class="card bg-success mb-3">
+        <div class="card-body">
+          <h5 class="card-title"><a class="text-white" href="{{ url_for('stable_diffusion_tool') }}">Stable Diffusion Tool</a></h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-12">
+      <div class="card bg-info mb-3">
+        <div class="card-body">
+          <h5 class="card-title"><a class="text-white" href="{{ url_for('story_generation_tool') }}">Story Generation Tool</a></h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
