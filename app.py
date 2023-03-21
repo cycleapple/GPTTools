@@ -63,5 +63,10 @@ def regex_generation_tool():
     # Render the template with the form
     return render_template('regex_generation_tool.html')
 
+@app.route('/regex101')
+def regex101():
+    regex_url = request.args.get('url')
+    return redirect(regex_url)
+
 if __name__ == '__main__':
     app.run(debug=True)
