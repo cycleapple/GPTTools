@@ -1,3 +1,4 @@
+English | [繁體中文](https://github.com/cycleapple/GPTTools/blob/master/README_zh.md)
 # GPT Tool
 
 This is a web application built using Flask that provides various tools that utilize the OpenAI GPT-3 API.
