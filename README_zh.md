@@ -1,3 +1,4 @@
+[English](https://github.com/cycleapple/GPTTools) | 繁體中文
 # GPT 工具
 
 這是一個使用 Flask 框架建立的網頁應用程式，提供了多種使用 OpenAI GPT-3 API 的工具。
