@@ -137,6 +137,10 @@ button.generate-email:hover {
   height: 100px;
 }
 
+.short-textarea {
+  height: 150px;
+}
+
 
 /* Responsive styles */
 

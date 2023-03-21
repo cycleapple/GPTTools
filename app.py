@@ -1,7 +1,12 @@
 from flask import Flask, render_template, request, redirect
-from excel_formula_generator import generate_excel_formula
 from email_generation import generate_email
+from excel_formula_generator import generate_excel_formula
 from regex_generator import generate_regex
+import os
+from dotenv import load_dotenv
+
+# Load the environment variables from the .env file
+load_dotenv()
 
 app = Flask(__name__)
 
@@ -57,13 +62,6 @@ def regex_generation_tool():
 
     # Render the template with the form
     return render_template('regex_generation_tool.html')
-
-
-@app.route('/regex101')
-def regex101():
-    regex_url = request.args.get('url')
-    return redirect(regex_url)
-
 
 if __name__ == '__main__':
     app.run(debug=True)
