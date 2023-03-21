@@ -19,7 +19,7 @@ def generate_email(sender, recipient, subject, language):
         """
     elif language == 'zh_TW':
         prompt = f"""
-        #zh-tw 用繁體中文，台灣人的口吻寫一封商業Email 由 {sender} 撰寫 給 {recipient} 收件 主題是 "{subject}，同時生成一個合適的主旨":
+        #zh-tw 用繁體中文，台灣人用字寫一封專業口吻的Email 由 {sender} 撰寫 給 {recipient} 收件 主題是 "{subject}":
 
         ---
         """
