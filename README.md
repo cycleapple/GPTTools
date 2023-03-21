@@ -57,8 +57,5 @@ This tool generates an Excel formula based on user-provided input for the requir
 ## Regex Generation Tool
 This tool generates a regular expression based on user-provided input for the requirement. The generated regular expression is created using a Python package called regex and is tested against sample input using an online regular expression tester, Regex101.
 
-# Contributing
-Contributions are always welcome! If you have any ideas for improvements or new features, feel free to create a pull request.
-
 # License
 This project is licensed under the MIT License.
