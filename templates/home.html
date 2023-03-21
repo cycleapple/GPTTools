@@ -2,26 +2,30 @@
 
 {% block content %}
 <div class="container">
-  <h1>Welcome to GPT Tools</h1>
   <div class="row">
-    <div class="col-md-6 col-sm-12 mx-auto">
-      <div class="card bg-primary mb-3">
+    <div class="col-md-12">
+      <h1 class="text-center my-5">GPT Tool</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card text-center mb-4">
         <div class="card-body">
-          <h5 class="card-title"><a class="text-white" href="{{ url_for('email_generation_tool') }}">Email Generation Tool</a></h5>
+          <h3 class="card-title"><a class="text-white" href="{{ url_for('email_generation_tool') }}">Email Generation Tool</a></h3>
         </div>
       </div>
     </div>
-    <div class="col-md-6 col-sm-12 mx-auto">
-      <div class="card bg-success mb-3">
+    <div class="col-md-4">
+      <div class="card text-center mb-4">
         <div class="card-body">
-          <h5 class="card-title"><a class="text-white" href="{{ url_for('stable_diffusion_tool') }}">Stable Diffusion Tool</a></h5>
+          <h3 class="card-title"><a class="text-white" href="{{ url_for('regex_generation_tool') }}">Regex Generation Tool</a></h3>
         </div>
       </div>
     </div>
-    <div class="col-md-6 col-sm-12 mx-auto">
-      <div class="card bg-info mb-3">
+    <div class="col-md-4">
+      <div class="card text-center mb-4">
         <div class="card-body">
-          <h5 class="card-title"><a class="text-white" href="{{ url_for('regex_generation_tool') }}">Regex Generator Tool</a></h5>
+          <h3 class="card-title"><a class="text-white" href="{{ url_for('excel_formula_generation_tool') }}">Excel Formula Generation Tool</a></h3>
         </div>
       </div>
     </div>

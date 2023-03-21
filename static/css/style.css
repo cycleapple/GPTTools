@@ -133,6 +133,10 @@ button.generate-email:hover {
   height: 100%;
 }
 
+#excel-output {
+  height: 100px;
+}
+
 
 /* Responsive styles */
 

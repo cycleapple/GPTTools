@@ -11,23 +11,19 @@ openai.api_key = os.getenv('OPENAI_API_KEY')
 # Define a function to generate an email using GPT
 def generate_email(sender, recipient, subject, language):
     # Define the prompt for generating the email
-    print(language)
     if language == 'en':
-        print('en')
         prompt = f"""
         Write an professional business email from {sender} to {recipient} with the subject "{subject}" in {language}:
 
         ---
         """
     elif language == 'zh_TW':
-        print('zzh')
         prompt = f"""
-        #zh-tw 用繁體中文，台灣人的口吻寫一封商業Email 由 {sender} 撰寫 給 {recipient} 收件 主題是 "{subject}":
+        #zh-tw 用繁體中文，台灣人的口吻寫一封商業Email 由 {sender} 撰寫 給 {recipient} 收件 主題是 "{subject}，同時生成一個合適的主旨":
 
         ---
         """
     else:
-        print('das')
         prompt = f"""
         Write an email from {sender} to {recipient} with the subject "{subject}":
 

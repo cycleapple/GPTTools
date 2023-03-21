@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <h2 class="text-center my-5">Excel Formula Generation Tool</h2>
+      <form method="POST" action="{{ url_for('excel_formula_generation_tool') }}">
+        <div class="form-group">
+          <label for="requirement">Requirement:</label>
+          <input type="text" class="form-control" id="requirement" name="requirement" placeholder="Enter the requirement" required>
+        </div>
+        <div class="form-group">
+          <label for="selection">Selection:</label>
+          <select class="form-control" id="selection" name="selection" required>
+            <option value="Google Sheet">Google Sheet</option>
+            <option value="Excel">Excel</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary mb-5 btn-home">Generate Formula</button>
+      </form>
+      <div class="form-group">
+        <label for="output">Generated Formula:</label>
+        <textarea class="form-control" id="excel-output" rows="10" readonly>{{ formula }}</textarea>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
