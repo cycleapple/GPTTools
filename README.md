@@ -13,10 +13,10 @@ This is a web application built using Flask that provides various tools that uti
 - [Contributing](#contributing)
 - [License](#license)
 
-## Overview
+# Overview
 This web application provides tools for generating emails, Excel formulas, and regular expressions using the OpenAI GPT-3 API. It also includes a tool for generating questions and answers based on a provided PDF file.
 
-## Installation
+# Installation
 1. Clone the repository to your local machine:
 ```bash
 git clone https://github.com/your_username/gpt-tool.git
@@ -44,21 +44,21 @@ python app.py
 
 6. Open your web browser and navigate to http://localhost:5000 to access the web application.
 
-## Usage
+# Usage
 Once the application is running, you can access the various tools by clicking on the corresponding links on the home page.
 
-## Tools
-### Email Generation Tool
+# Tools
+## Email Generation Tool
 This tool generates an email based on user-provided input for the sender, recipient, subject, and language. The generated email is created using the OpenAI GPT-3 API.
 
-### Excel Formula Generation Tool
+## Excel Formula Generation Tool
 This tool generates an Excel formula based on user-provided input for the requirement and selection (Google Sheet or Excel). The generated formula is created using the OpenAI GPT-3 API.
 
-### Regex Generation Tool
+## Regex Generation Tool
 This tool generates a regular expression based on user-provided input for the requirement. The generated regular expression is created using a Python package called regex and is tested against sample input using an online regular expression tester, Regex101.
 
-## Contributing
+# Contributing
 Contributions are always welcome! If you have any ideas for improvements or new features, feel free to create a pull request.
 
-## License
+# License
 This project is licensed under the MIT License.
